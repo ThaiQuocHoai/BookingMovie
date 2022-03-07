@@ -1,0 +1,21 @@
+.detail-component ul li{
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+}
+
+.detail-component ul li p{
+    font-size: 17px;
+}
+
+.detail-component{
+    padding-bottom: 50px;
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 575.99px) {
+    .detail-component .row .col-12:nth-child(1){
+        display: none;
+    }
+}

@@ -1,0 +1,234 @@
+.header{
+    position: relative;
+    z-index: 999;
+}
+
+.layout{
+    transition: all .8s;
+}
+
+.layout.active{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000000b5;
+    z-index: 998;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all .8s;
+}
+
+.nav{
+    position: fixed;
+    z-index: 999;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0 5px 20px  rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.service ul li{
+    list-style: none;
+    margin-right: 40px;
+}
+
+.menu{
+    z-index: 999;
+    width: 60%;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    transition: .5s;
+    background: white;
+    display: none;
+    height: 100%;
+}
+
+.menu.active{
+    right: 0;
+}
+
+.menu__dangnhap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu__dangnhap button{
+    background-color: transparent;
+    border: none;
+}
+.menu__dangnhap button:focus{
+    outline: 0;
+}
+
+.menu__button{
+    background-color: transparent;
+    border: none;
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 15px;
+    visibility: visible;
+}
+
+.menu__button.active{
+    visibility: hidden;
+}
+
+.menu__button:focus{
+    outline: 0;
+}
+
+.service{
+    margin-top: 12px;
+}
+
+.service ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.service ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.service ul li a:hover{
+    color: #fb4226;
+}
+
+.user{
+    margin-top: 10px;
+}
+
+.user ul{
+    display: flex;
+    align-items: center;
+}
+
+.user ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.user ul li a{
+    text-decoration: none;
+    color: #9b9b9b;
+    padding: 5px 0;
+    padding-right: 10px;
+}
+
+.user .login {
+    border-right: 1px solid #9b9b9b63;
+    margin-right: 10px;
+}
+
+.user .user__login{
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.user .fa-registered{
+    font-size: 27px;
+    padding-right: 5px;
+}
+
+.user__register{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: 150px;
+}
+
+.menu__login{
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.menu ul li{
+    list-style: none;
+    padding: 15px 0;
+    padding-left: 10px;
+}
+
+.menu ul li a{
+    color: black;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: #fb4226;
+
+}
+
+.menu ul li a:focus{
+    color: #fb4226;
+    text-decoration: none;
+}
+
+#dangnhap{
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+#login__icon{
+    font-size: 13px;
+    color: gray;
+    text-align: right;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 768.99px) {
+    .logo{
+        margin-right: 0;
+    }
+    .service{
+        visibility: hidden;
+    }
+    .menu{
+        display: block;
+        background-color: #fff;
+        z-index: 9999;
+    }
+
+    .menu ul{
+        background-color: #fff;
+        height: 100vh;
+    }
+}
+
+
+@media screen and (max-width: 639.99px) {
+    .nav{
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+    
+    .logo{
+        margin: 0;
+        padding-left: 10px;
+    }
+
+    .menu__button{
+        display: block;
+        z-index: 101;
+        margin-right: 30px;
+    }
+
+    .user{
+        display: none;
+    }
+
+    .service{
+        display: none;
+    }
+}

@@ -1,0 +1,166 @@
+.ant-card {
+  margin-bottom: 50px;
+}
+
+.card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: 5s;
+}
+
+.card .ant-card-meta-title {
+  font-weight: 700;
+  box-shadow: #00000029 0px 0px 10px 0px;
+}
+
+.card .ant-card-meta-description {
+  font-size: 12px;
+}
+
+.card__layout {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 270px;
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.904),
+    rgba(0, 0, 0, 0.075)
+  );
+  visibility: hidden;
+}
+
+.card .card__rate {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #000000b5;
+  border-radius: 7px;
+  width: 60px;
+  height: 50px;
+}
+
+.card .card__rate .card__p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+}
+
+.card .card__rate ul {
+  line-height: 0;
+  padding-right: 8px;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+}
+
+.card .card__rate ul li {
+  font-size: 10px;
+  width: 0;
+  color: red;
+}
+
+.card .btnPlay {
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 40px;
+  background-color: transparent;
+  border: none;
+  visibility: hidden;
+}
+.card .btnPlay:focus {
+  outline: none;
+}
+
+.card .btnPlay img {
+  width: 40px;
+}
+
+.card:hover .card__layout,
+.card:hover .btnPlay > img {
+  visibility: visible;
+}
+
+.card .ant-card-meta-description {
+  transition: 0.5s;
+}
+
+.card:hover .ant-card-meta-description {
+  transition: 0.5s;
+  transform: translateX(75%);
+}
+.card .btnMuaVe {
+  position: absolute;
+  bottom: 18px;
+  left: -50%;
+  transform: translateX(-50%);
+  transition: 0.5s;
+  background-color: #fb4226;
+  color: white;
+  padding: 2px 20px;
+  border-radius: 5px;
+  border: 1px solid #fff;
+}
+
+.card .btnMuaVe:hover {
+  color: #fb4226;
+  background-color: #fff;
+  border: 1px solid #fb4226;
+}
+
+.card:hover .btnMuaVe {
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 769.99px) {
+  .card {
+    width: 170px !important;
+  }
+
+  .card .btnMuaVe {
+    font-size: 12px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+  .ant-card-meta-description {
+    transition: 0.5s;
+    transform: translateX(75%);
+  }
+}
+
+@media screen and (max-width: 540.99px) {
+  .card {
+    width: 400px !important;
+  }
+
+  .card:hover .card__layout,
+  .card:hover .btnPlay > img {
+    display: none;
+  }
+
+  .ant-card .ant-card-body {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 410.99px) {
+  .card {
+    width: 300px !important;
+    /* height: 330px; */
+  }
+}
+
+@media screen and (max-width: 279.99px) {
+  .card {
+    width: 200px !important;
+    /* height: 330px; */
+  }
+}

@@ -1,0 +1,49 @@
+.cumRapHeThong{
+    position: relative;
+}
+
+.cumRapHeThong .cumRapHeThong__layout{
+    position: absolute;
+    background-color: #ffffffbf;
+    /* background-color: black; */
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.cumRapHeThong .col-10 p{
+    font-weight: 700;
+}
+
+.cumRapHeThong:hover .cumRapHeThong__layout, .cumRapHeThong:hover .col-10 p{
+    background-color: transparent!important;
+    color: #fb4226;
+}
+
+.ant-tabs-tab-active .cumRapHeThong .cumRapHeThong__layout{
+    display: none;
+}
+
+.cum .ant-tabs-nav-list{
+    width: 400px;
+}
+
+.cum .ant-tabs-content-holder{
+    overflow-y: scroll    ;
+}
+
+.cum ::-webkit-scrollbar {
+    width: 2px;
+  }
+
+.cum ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+.cum ::-webkit-scrollbar-thumb {
+    background: lightgray;
+  }

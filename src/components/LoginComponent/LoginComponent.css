@@ -1,0 +1,159 @@
+
+
+/* form starting stylings ------------------------------- */
+.group {
+  position: relative;
+  margin-bottom: 25px;
+}
+input {
+  font-size: 20px!important;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 80%;
+  margin: auto!important;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+input:focus {
+  outline: none;
+}
+
+/* LABEL ======================================= */
+label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 10%;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #fa5238;
+}
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative;
+  display: block;
+  width: 253px;
+}
+.bar:before,
+.bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #fa5238;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.bar:before {
+  left: 87%;
+}
+.bar:after {
+  right: 13%;
+}
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 70%;
+}
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 8%;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+.btnModal{
+  text-align: center;
+  transition: .5s;
+  background-color: #fa5238;
+  color: #fff;
+  border: 1px solid #fa5238;
+  width: 130px;
+  font-size: 20px!important;
+  height: 40px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.btnModal:hover{
+  color: #fa5238;
+  background-color: #fff;
+}
+
+.btnModal:focus{
+  outline: none;
+}
+
+.modalLink{
+  text-decoration: underline!important;
+}
+
+.modalLink:hover{
+  color: #fa5238!important;
+}
+
+/* active state */
+input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: #fa5238;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: #fa5238;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: #fa5238;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+
+@media screen and (max-width: 538.99px) {
+  .bar{
+    display: none;
+  }
+  input{
+    font-size: 15px!important;
+  }
+}

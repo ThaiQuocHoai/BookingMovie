@@ -1,0 +1,10 @@
+.lichSuDatVe {
+    overflow-y: scroll;
+    height: 500px;
+}
+
+@media screen and (max-width: 767.99px){
+    .lichSuDatVe {
+        height: 700px;
+    }
+}

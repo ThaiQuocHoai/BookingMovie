@@ -1,0 +1,22 @@
+.profile{
+    background-image: url('../../assets/img/icons/slide/backapp.jpg');
+    height: 100vh;
+    position: relative;
+}
+
+
+
+.profile .ant-tabs {
+    background-color:#ffffffc7;
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 78%;
+    border-radius: 10px;
+}
+
+.profile .ant-tabs-tab-btn{
+    font-weight: 700;
+}

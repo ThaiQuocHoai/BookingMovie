@@ -1,0 +1,14 @@
+.profileComponent p{
+    font-weight: 700;
+    font-size: 17px;
+    white-space: nowrap;
+}
+
+.profileComponent .ant-tabs-nav{
+    margin: 0;
+}
+
+/* .profileComponent{
+    padding-top: 5px;
+} */
+

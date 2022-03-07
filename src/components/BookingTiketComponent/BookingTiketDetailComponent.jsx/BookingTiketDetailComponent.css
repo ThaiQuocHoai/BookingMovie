@@ -1,0 +1,20 @@
+.booking-tiket-detail{
+    height: 300px;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.booking-tiket-detail .row{
+    padding-bottom: 20px;
+}
+
+.booking-tiket-detail .row p{
+    color: white;
+}
+
+@media only screen and (max-width: 575.99px){
+    .booking-tiket-detail .row .col-sm-4{
+        display: none;
+    }
+}

@@ -1,0 +1,70 @@
+.app{
+    background-image: url('./../../assets/img/icons/slide/backapp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.app__container{
+    width: 60%;
+    margin: auto;
+    color: white!important;
+    height: 100%;
+}
+
+.app__container .appLeft{
+    display: flex;
+    flex-direction: column!important;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+}
+
+.appLeft h2{
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.appLeft p{
+    font-size: medium;
+}
+
+.appLeft .btnApp{
+    background-color: #fb4226;
+    border: none;
+    width: 230px;
+    height: 40px;
+    font-size: medium;
+    font-weight: 700;
+    border-radius: 5px;
+    transition: .5s;
+    margin-top: 15px;
+}
+
+.appLeft .btnApp:focus{
+    outline: none;
+}
+
+.appLeft .btnApp:hover{
+    background-color: #fff;
+    color: #fb4226;
+}
+
+.appRight{
+    position: relative;
+}
+
+.appRight .appScreen, .appRight .mobileApp{
+    position: absolute;
+    
+}
+
+.appRight .appScreen{
+    border-radius: 15px;
+}
+
+@media screen and (max-width: 539.99px) {
+    .app__container .appRight{
+        display: none!important;
+    }
+}

@@ -1,0 +1,10 @@
+.btn-show{
+    border: 3px solid darkgray;
+    color: darkgray;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.filmmobile{
+    transition: .5s;
+}
